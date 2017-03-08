@@ -2,15 +2,15 @@
 
 var lista = document.getElementById('list');
 var add = document.getElementById('addElem');
+var itemjs = document.getElementsByTagName("li");
 
 addEventListener('click', function() {
-  list.innerHTML += '<li>item</li>';
+  list.innerHTML += '<li>item</li>' + itemjs.length;
 });
 
-var itemjs = document.getElementsByTagName("item");
-console.log(itemjs);
-console.log(itemjs.length);
 
+
+console.log(itemjs, itemjs.length);
 
 
 
